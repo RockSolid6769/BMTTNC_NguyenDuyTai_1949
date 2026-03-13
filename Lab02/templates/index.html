@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cryptography Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6{
+  font-family:"Playfair Display";
+  letter-spacing:5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    
+    <a href="/" class="w3-bar-item w3-button">
+      <b>Cryptography Lab</b>
+    </a>
+
+    <div class="w3-right w3-hide-small">
+
+      <a href="/caesar" class="w3-bar-item w3-button">Caesar</a>
+
+      <a href="/vigenere" class="w3-bar-item w3-button">Vigenere</a>
+
+      <a href="/playfair" class="w3-bar-item w3-button">Playfair</a>
+
+      <a href="/railfence" class="w3-bar-item w3-button">Rail Fence</a>
+
+      <a href="/transposition" class="w3-bar-item w3-button">Transposition</a>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide"
+        style="max-width:1600px;min-width:500px">
+
+<img class="w3-image"
+src="{{ url_for('static', filename='images/crypto.jpg') }}"
+alt="Cryptography"
+width="1600"
+height="800">
+
+<div class="w3-display-middle w3-center w3-padding-large w3-opacity">
+
+<h1 class="w3-xxlarge">Information Security Lab</h1>
+
+<h3>Classical Cryptography Practice</h3>
+
+<br>
+
+<a href="/caesar"
+class="w3-button w3-black w3-padding-large w3-margin-right">
+Try Caesar
+</a>
+
+<a href="/vigenere"
+class="w3-button w3-dark-grey w3-padding-large w3-margin-right">
+Try Vigenere
+</a>
+
+<a href="/playfair"
+class="w3-button w3-dark-grey w3-padding-large">
+Try Playfair
+</a>
+
+</div>
+
+</header>
+
+
+<!-- Page Content -->
+<div class="w3-content" style="max-width:1100px">
+
+<hr>
+
+<!-- About -->
+<div class="w3-row w3-padding-64">
+
+<div class="w3-col m6 w3-padding-large w3-hide-small">
+
+<img src="{{ url_for('static', filename='images/crypto.jpg') }}"
+class="w3-round w3-image w3-opacity-min"
+alt="crypto"
+width="600"
+height="750">
+
+</div>
+
+
+<div class="w3-col m6 w3-padding-large">
+
+<h1 class="w3-center">About This Lab</h1><br>
+
+<h5 class="w3-center">Advanced Information Security Practice</h5>
+
+<p class="w3-large">
+
+This web application demonstrates several classical
+cryptography algorithms used to encrypt and decrypt
+text messages.
+
+</p>
+
+<p class="w3-large w3-text-grey">
+
+The system currently supports:
+
+<br><br>
+
+• Caesar Cipher  
+• Vigenere Cipher  
+• Playfair Cipher  
+• Rail Fence Cipher  
+• Transposition Cipher  
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+
+<!-- Cipher Menu -->
+<div class="w3-row w3-padding-64">
+
+<div class="w3-col l6 w3-padding-large">
+
+<h1 class="w3-center">Available Algorithms</h1><br>
+
+<h4>Caesar Cipher</h4>
+<p class="w3-text-grey">
+Shifts letters of the alphabet by a fixed key.
+</p>
+
+<br>
+
+<h4>Vigenere Cipher</h4>
+<p class="w3-text-grey">
+Uses a keyword to perform polyalphabetic substitution.
+</p>
+
+<br>
+
+<h4>Playfair Cipher</h4>
+<p class="w3-text-grey">
+Encrypts pairs of letters using a 5x5 matrix.
+</p>
+
+<br>
+
+<h4>Rail Fence Cipher</h4>
+<p class="w3-text-grey">
+Encrypts text using a zig-zag pattern.
+</p>
+
+<br>
+
+<h4>Transposition Cipher</h4>
+<p class="w3-text-grey">
+Rearranges character positions using a key.
+</p>
+
+</div>
+
+
+<div class="w3-col l6 w3-padding-large">
+
+<img src="{{ url_for('static', filename='images/crypto.jpg') }}"
+class="w3-round w3-image w3-opacity-min"
+alt="crypto"
+style="width:100%">
+
+</div>
+
+</div>
+
+<hr>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+
+<p>
+Information Security Lab - Flask Cryptography Demo
+</p>
+
+</footer>
+
+</body>
+</html>
